@@ -15,8 +15,8 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root "welcome#index"
-match 'searchgem', to: 'info#infogem', via: [:get, :post]
-
+  match 'searchgem', to: 'info#infogem', via: [:get, :post]
+  match 'searchauthor', to: 'info#infoauthor', via: [:get, :post]
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

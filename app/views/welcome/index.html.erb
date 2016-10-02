@@ -6,3 +6,12 @@
 <%= text_field_tag(:search_gem) %>
 <%= submit_tag("Search gem") %>
 <% end %>
+
+<hr>
+
+<%= form_tag("searchauthor ", method: "post") do %>
+<%= label_tag(:search_author, "Search all gems of the author") %>
+<%= text_field_tag(:search_author) %>
+<%= submit_tag("Search author") %>
+<% end %>
+

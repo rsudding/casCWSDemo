@@ -18,8 +18,17 @@ class InfoController < ApplicationController
   end
   
   def infoauthor
+    if params[:search_author].to_s.present?
+      @author = params[:search_author]
+      @response = RubyGemOrg.getGemsOfAuthor(@author)
+    else
+      redirect_to(root_url)
+    end
   end
-
-  def infolatestgems
-  end
+ 
+ 
+ # def infolatestgems
 end
+
+
+
