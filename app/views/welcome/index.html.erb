@@ -15,3 +15,8 @@
 <%= submit_tag("Search author") %>
 <% end %>
 
+<hr>
+<%= form_tag("findgem50 ", method: "post") do %>
+<%= label_tag(:find_gem50, "Show 50 Latest GEMS:") %>
+<%= submit_tag("Show 50 Latest GEMS") %>
+<% end %>

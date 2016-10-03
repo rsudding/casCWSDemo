@@ -15,4 +15,11 @@ class RubyGemOrg
         responsebody = JSON.parse(response.body)
         return responsebody
     end
+        #GET - GET - /api/v1/activity/latest 'https://rubygems.org/api/v1/activity/latest.json' 
+    def self.get50LatestGems()
+        url="https://rubygems.org/api/v1/activity/latest.json"
+        response = HTTParty.get(url)
+        responsebody = JSON.parse(response.body)
+        return responsebody
+    end
 end

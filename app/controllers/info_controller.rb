@@ -27,7 +27,8 @@ class InfoController < ApplicationController
   end
  
  
- # def infolatestgems
+ def infolatestgems
+   
 end
 
 
